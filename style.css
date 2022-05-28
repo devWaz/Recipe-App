@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: Selawik;
+    src: url("SelawikLight.ttf") format("opentype");
+}
+
+body{font-family: Selawik;}
+
 nav{
     text-align: center;
     height: 2rem;
@@ -35,7 +42,7 @@ nav a{
     flex-direction: column;
     align-items: center;
     color: white;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .textArea h1{
@@ -50,6 +57,7 @@ nav a{
     margin: 2rem ;
     display: flex;
     align-items: stretch;
+    width: 50%;
 }
 
 .search-control,
@@ -59,14 +67,14 @@ nav a{
 
 .search-control{
     padding: 0 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: inherit;
     outline: 0;
     border: 1px solid #06526b;
     color:  #06526b;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .search-control::placeholder{
@@ -75,7 +83,7 @@ nav a{
 
 .search-btn{
     width: 6rem;
-    height: 50px;
+    height: 40px;
     font-size: 1.8rem;
     background:  #06526b;
     color: #fff;
@@ -87,6 +95,6 @@ nav a{
     -moz-transition: all 0.4s linear;
     -ms-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
-    border: 1px solid purple;
+    /* border: 1px solid #06526b; */
 }
 
