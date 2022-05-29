@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-:root{
+:root {
     --primary-color: #06526b;
 }
 
@@ -35,7 +35,7 @@ nav a {
     font-weight: bolder;
 }
 
-#red{
+#red {
     color: rgb(247, 29, 29);
 }
 
@@ -61,7 +61,7 @@ nav a {
     font-size: 1.5rem;
 }
 
-span > img {
+span>img {
     margin-bottom: -4px;
     margin-left: 10px;
 }
@@ -111,57 +111,57 @@ span > img {
     -o-transition: all 0.4s linear;
 }
 
-.title{
+.title {
     text-align: center;
     margin: 1rem;
     color: white;
 }
 
-.secondSection{
+.secondSection {
     min-height: 10vh;
 }
 
 
 /**/
-.meal-result{
+.meal-result {
     display: flex;
     flex-wrap: wrap;
 }
 
-#meal{
-    margin: 1rem 3rem ; 
+#meal {
+    margin: 1rem 3rem;
     width: 25%;
 }
 
-.meal-item{
+.meal-item {
     border-radius: 10px;
     overflow: hidden;
     background-color: #fff;
 }
 
-.meal-img img{
+.meal-img img {
     width: 100%;
     height: 12rem;
     display: block;
 }
 
-.meal-name{
+.meal-name {
     padding: 0.5rem;
 }
 
-.meal-name h3{
+.meal-name h3 {
     font-size: 1.4rem;
     text-align: center;
 }
 
-.recipe-btn{
+.recipe-btn {
     text-decoration: none;
     text-align: center;
     color: #fff;
     background: var(--primary-color);
     font-weight: 500;
     font-size: .9rem;
-    padding: 0.5rem ;
+    padding: 0.5rem;
     display: block;
     width: 6rem;
     margin: 1rem auto;
@@ -169,12 +169,12 @@ span > img {
 
 }
 
-.recipe-btn:hover{
+.recipe-btn:hover {
     /* background: var(--tenne-tawny-dark); */
 }
 
 
-footer h5{
+footer h5 {
     color: white;
     text-align: center;
     margin: 1rem;
