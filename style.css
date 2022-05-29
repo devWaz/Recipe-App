@@ -12,18 +12,19 @@ body{font-family: Selawik;}
 
 nav{
     text-align: center;
-    height: 2rem;
-    padding-top: 1rem;
+    height: 1.5rem;
+    padding: 1rem;
     background-color: #06526b;
 }
 
 nav a{
     text-decoration: none;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     padding: 5px;
     background-color: #06526b;
-    border-radius: 5px;
+    border-radius: 7px;
+    font-weight: bolder;
 }
 
 .firstSection{
