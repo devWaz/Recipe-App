@@ -1,33 +1,41 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
+:root{
+    --primary-color: #06526b;
+}
+
+
 
 @font-face {
     font-family: Selawik;
     src: url("SelawikLight.ttf") format("opentype");
 }
 
-body{font-family: Selawik;}
+body {
+    font-family: Selawik;
+    background-color: var(--primary-color);
+}
 
-nav{
+nav {
     text-align: center;
     height: 1.5rem;
     padding: 1rem;
-    background-color: #06526b;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: white;
     border: 2px solid white;
     padding: 5px;
-    background-color: #06526b;
+    background-color: var(--primary-color);
     border-radius: 7px;
     font-weight: bolder;
 }
 
-.firstSection{
+.firstSection {
     /* display: flex;
     flex-direction: column;
     align-items: center; */
@@ -38,7 +46,7 @@ nav a{
     /* opacity: 0.7; */
 }
 
-.textArea{
+.textArea {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,47 +54,47 @@ nav a{
     /* border: 1px solid red; */
 }
 
-.textArea h1{
+.textArea h1 {
     font-size: 3.5rem;
 }
 
-.textArea h4{
+.textArea h4 {
     font-size: 1.5rem;
 }
 
-.meal-search-box{
-    margin: 2rem ;
+.meal-search-box {
+    margin: 2rem;
     display: flex;
     align-items: stretch;
     width: 50%;
 }
 
 .search-control,
-.search-btn{
+.search-btn {
     width: 100%;
 }
 
-.search-control{
+.search-control {
     padding: 0 1rem;
     font-size: 1rem;
     font-family: inherit;
     outline: 0;
-    border: 1px solid #06526b;
-    color:  #06526b;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
     /* border: 1px solid red; */
 }
 
-.search-control::placeholder{
-    color:  #06526b;
+.search-control::placeholder {
+    color: var(--primary-color);
 }
 
-.search-btn{
+.search-btn {
     width: 6rem;
     height: 40px;
     font-size: 1.8rem;
-    background:  #06526b;
+    background: var(--primary-color);
     color: #fff;
     border: none;
     border-top-right-radius: 2rem;
@@ -96,6 +104,15 @@ nav a{
     -moz-transition: all 0.4s linear;
     -ms-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
-    /* border: 1px solid #06526b; */
+}
+
+.title{
+    text-align: center;
+    margin: 1rem;
+    color: white;
+}
+
+.secondSection{
+    min-height: 10vh;
 }
 
