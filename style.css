@@ -135,7 +135,6 @@ span > img {
 .meal-item{
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.79);
     background-color: #fff;
 }
 
