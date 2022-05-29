@@ -36,7 +36,7 @@ nav a {
 }
 
 #red{
-    color: red;
+    color: rgb(247, 29, 29);
 }
 
 .firstSection {
@@ -101,6 +101,7 @@ span > img {
     background: var(--primary-color);
     color: #fff;
     border: none;
+    cursor: pointer;
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
     transition: all 0.4s linear;
@@ -128,7 +129,7 @@ span > img {
 }
 
 #meal{
-    margin: 1rem 3rem;
+    margin: 1rem 3rem ; 
     width: 25%;
 }
 
@@ -157,9 +158,9 @@ span > img {
     text-decoration: none;
     text-align: center;
     color: #fff;
-    background: black;
+    background: var(--primary-color);
     font-weight: 500;
-    font-size: .7rem;
+    font-size: .9rem;
     padding: 0.5rem ;
     display: block;
     width: 6rem;
@@ -173,10 +174,14 @@ span > img {
 }
 
 
-
+footer h5{
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
 
 /**/
-@media screen and (min-width: 320px) {
+/* @media screen and (min-width: 320px) {
     nav {
         padding: 0;
         height: 1.5rem;
@@ -249,4 +254,4 @@ span > img {
 
 @media screen and (min-width: 1024px){
     
-}
+} */
