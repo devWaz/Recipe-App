@@ -230,9 +230,17 @@ footer h5 {
     }
 
     #meal{
-        margin: 1rem 1rem;
+        margin: 0rem 1rem;
         width: 90%;
     }
+
+    .meal-item {
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #fff;
+        margin: 1rem 0rem;
+    }
+
 }
 
 
