@@ -10,6 +10,8 @@ recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 
+
+//Gets the list of meals available matching the keyword we input
 function getMealList(){
     let searchInputTxt = document.getElementById('search-input').value.trim();
     console.log(searchInputTxt)
@@ -39,4 +41,14 @@ function getMealList(){
 
         mealList.innerHTML = searchResults;
     });
+}
+
+
+//Gets the Recipe from the API
+function getMealRecipe(e){
+    e.preventDefault();
+    if(e.target.classList.contains('recipe-btn')){
+        let mealItem = e.target.parentElement.parentElement;
+        fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${}`)
+    }
 }
