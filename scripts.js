@@ -12,16 +12,16 @@ recipeCloseBtn.addEventListener('click', () => {
 
 
 //Gets the list of meals available matching the keyword we input
-function getMealList(){
+function getMealList() {
     let searchInputTxt = document.getElementById('search-input').value.trim();
     console.log(searchInputTxt)
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
-    .then(response => response.json())
-    .then(data => {
-        let searchResults = "";
-        if(data.meals){
-            data.meals.forEach(meal => {
-                searchResults += `
+        .then(response => response.json())
+        .then(data => {
+            let searchResults = "";
+            if (data.meals) {
+                data.meals.forEach(meal => {
+                    searchResults += `
                     <div class = "meal-item" data-id = "${meal.idMeal}">
                         <div class = "meal-img">
                             <img src = "${meal.strMealThumb}" alt = "food">
@@ -32,23 +32,28 @@ function getMealList(){
                         </div>
                     </div>
                 `;
-            });
-            mealList.classList.remove('notFound');
-        } else{
-            searchResults = "Sorry, we didn't find any meal!";
-            mealList.classList.add('notFound');
-        }
+                });
+                mealList.classList.remove('notFound');
+            } else {
+                searchResults = "Sorry, we didn't find any meal!";
+                mealList.classList.add('notFound');
+            }
 
-        mealList.innerHTML = searchResults;
-    });
+            mealList.innerHTML = searchResults;
+        });
 }
 
 
 //Gets the Recipe from the API
-function getMealRecipe(e){
+function getMealRecipe(e) {
     e.preventDefault();
-    if(e.target.classList.contains('recipe-btn')){
+    if (e.target.classList.contains('recipe-btn')) {
         let mealItem = e.target.parentElement.parentElement;
-        fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${}`)
+        fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`)
+            .then(response => response.json())
+            .then(data => mealRecipeModal(data.meals));
     }
 }
+
+//Create Modal
+function mealRecipeModal() {}
