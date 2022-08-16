@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: Selawik;
-    src: url("SelawikLight.ttf") format("opentype");
+    src: url("assets/SelawikLight.ttf") format("opentype");
 }
 
 
@@ -40,7 +40,7 @@ nav a {
 }
 
 .firstSection {
-    background-image: url('bgImage1.jpg');
+    background-image: url('assets/bgImage1.jpg');
     background-size: cover;
     min-height: 40vh;
     padding: 5rem;
@@ -179,8 +179,7 @@ span>img {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 0 1rem black;
+    box-shadow: 0 0 5rem black;
     width: 80%;
     height: 80%;
     overflow-y: scroll;
@@ -189,6 +188,7 @@ span>img {
     background-color: var(--primary-color);
 }
 
+/* Scrollbar Styling */
 .meal-details::-webkit-scrollbar{
     width: 5px;
     height: 5px;
@@ -213,7 +213,7 @@ span>img {
     top: 2rem;
     font-size: 1.2rem;
     background: rgb(189, 4, 4);
-    box-shadow: 0 0 1rem red;
+    box-shadow: 0 0 1rem black;
     color: white;
     border: none;
     width: 30px;
@@ -243,9 +243,8 @@ span>img {
 }
 
 .recipe-meal-img img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
     margin: 1rem auto;
     display: block;
 }
@@ -289,7 +288,7 @@ footer h5 {
     margin: 1rem;
 }
 
-/**/
+/*Smallest Screen Size*/
 @media screen and (min-width: 320px) {
     nav {
         padding: 0;
@@ -339,13 +338,19 @@ footer h5 {
         margin-bottom: 1.5rem;
     }
 
+    .recipe-meal-img img{
+        width: 220px;
+        height: 220px;
+    }
+
 }
 
 
+/* Medium Range Devices */
 @media screen and (min-width: 768px){
     nav {
-        height: 1rem;
-        padding: 1.7rem 0;
+        /* height: 1rem; */
+        padding: 1rem 0;
     }
     
     nav a {
@@ -373,6 +378,10 @@ footer h5 {
         font-size: 1.7rem;
     }
 
+    .meal-search-box {
+        width: 50%;
+    }
+
     .search-btn {
         width: 6rem;
         height: 50px;
@@ -393,6 +402,17 @@ footer h5 {
     }
 } 
 
+/* Laptop Screen */
 @media screen and (min-width: 1024px){
-    
+    .firstSection {
+        min-height: 70vh;
+    }
+
+    .meal-item {
+        width: 30%;
+    }
+
+    .meal-search-box {
+        width: 40%;
+    }
 } 
