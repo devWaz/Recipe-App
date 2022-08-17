@@ -9,8 +9,8 @@ Link to the live [site](https://waztherecipe.netlify.app)
 - JavaScript
 
 ### What i learnt while building this project
-I built this project while i was just getting introduced to APIs so i kind of got confused on how to handle & output the data i was consuming from the API , 
-I was given a boring template so i had to redesign it to my taste , other things i learnt :
+I built this project while i was just getting introduced to APIs so i kind of got confused on how to handle & output the data i was consuming from the API & 
+I was given a template to work with, i found the template boring so i had to redesign it to my taste. other things i learnt :
 - API Endpoints
 - Creating Modal Popups
 - fetch API
